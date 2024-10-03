@@ -1,0 +1,46 @@
+/***************** SECTION2 PART ***********************/
+.section2{
+    background: $color4;
+    min-height: 70vh;
+    display: block;
+    justify-content: center;
+    text-align: center;
+
+    p{
+        font-family: $font1;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $color3;
+        padding: 50px 0 30px 0;
+    }
+    img{
+        margin-bottom: 50px;
+    }
+    ul{
+        @include alignChildren(space-around);
+        width: 50%;
+        min-width: 500px;
+        margin: 0 auto;
+        @media screen and (max-width: 767px){
+            min-width: 200px;
+            width: 90%;
+        }
+        
+        li{
+            color: $color2;
+            font-size: 1.2rem;
+            font-family: $font3;
+            padding-bottom: 7px;
+            border-bottom: 1px solid $color2;
+            transition: 1s all;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+            @media screen and (max-width: 767px){
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

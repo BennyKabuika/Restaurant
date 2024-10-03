@@ -1,0 +1,61 @@
+/******************** GENERAL SETTINGS *********************************/
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: "Allura";
+    src: url(../font/Allura-Regular.ttf);
+    font-family: "Poppins";
+    src: url(../font/Poppins-Medium.ttf);
+    font-family: "Roboto";
+    src: url(../font/Roboto-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*body{
+    &:before{
+        content : "";
+        position: absolute;
+        height : 100%;
+        width : 100%;
+        top : 0;
+        left : 0;
+        background : black;
+        animation : animBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+
+        @keyframes animBefore{
+            to {
+                opacity : 0;
+            }
+        }
+    }
+}*/
+// Variable
+$font1: Allura,sans-serif;
+$font2: Poppins,sans-serif;
+$font3: Roboto,sans-serif;
+$color1: black;
+$color2: white;
+$color3: #7c5316;
+$color4: rgb(44, 40, 40);
+$color5: rgb(19, 17, 17);
+$color6: rgb(224, 220, 220);
+$color7: grey;
+html{
+    scroll-behavior: smooth;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $color1;
+}
+@mixin alignChildren($space){
+    display: flex;
+    justify-content: $space;
+    text-align: center;
+    align-items: center;
+}

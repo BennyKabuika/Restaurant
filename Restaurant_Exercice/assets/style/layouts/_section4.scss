@@ -1,0 +1,55 @@
+/**************** SECTION4 PART *************************/
+.section4{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background: url(/assets/img/gmap.jpg) center/cover;
+    height: 85vh;
+
+    .content{
+        transform: translateY(-150px);
+        background: $color6;
+        width: 75%;
+        margin: 0 auto;
+
+        img{
+            width: 80px;
+            border-radius: 50%;
+            transform: translateY(-45px);
+        }
+        p{
+            width: 80%;
+            margin: 0 auto;
+            font-family: $font3;
+            font-size: 1.3rem;
+            padding-bottom: 50px;
+            &:before{
+                content: "❝ ";
+                font-size: 3rem;
+            }
+            &:after{
+                content: " ❞";
+                font-size: 3rem;
+            }
+        }
+        .name{
+            font-family: $font3;
+            font-size: 2rem;
+            &:before{
+                content: "";
+            }
+            &:after{
+                content: "";
+            }
+        }
+        .ceo{
+            color: $color3;
+            &:before{
+                content: "";
+            }
+            &:after{
+                content: "";
+            }
+        }
+    }
+}

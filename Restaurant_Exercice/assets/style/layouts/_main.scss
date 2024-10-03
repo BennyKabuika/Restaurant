@@ -1,0 +1,80 @@
+/******************* MAIN PART*********************/
+main{
+    background: url(/assets/img/bg-menu-01.jpg) no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+
+    .menu{
+        @include alignChildren(center);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 190px;
+        width: 70%;
+        margin: 0 auto;
+
+        .menu-card{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0 50px;
+            background: $color6;
+            border-top: 7px solid $color3;
+            width: 85%;
+            padding: 20px;
+            margin: 0 auto;
+
+            .menu-list{
+                border-bottom: 1px dashed $color7;
+                display: flex;
+                margin: 70px auto 0 auto;
+                padding-bottom: 25px;
+                width: 100%;
+                
+                .menu-text{
+                    display: block;
+                    margin: 0 30px 0 30px;
+                    text-align-last: left;
+                }
+                h4{
+                    font-family: $font3;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                }
+                p{
+                    font-family: $font3;
+                    font-size: 1.2rem;
+                }
+                .price{
+                    color: $color3;
+                    font-family: $font2;
+                    font-size: 2rem;
+                }
+                img{
+                    border-radius: 50%;
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 767px){
+    main{
+        position: relative;
+        .menu{
+            display: block;
+            position: absolute;
+            transform: translateY(-250px);
+            width: 95%;
+            .menu-card{
+                display: block;
+
+                .menu-list{
+                    display: block;
+                    font-size: 0.7rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

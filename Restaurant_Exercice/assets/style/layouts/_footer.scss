@@ -1,0 +1,66 @@
+/***************** FOOTER PART **************************/
+footer{
+    background: url(/assets/img/bg-footer.jpg) center/cover;
+    display: grid;
+    grid-template-columns: 50% 50%();
+
+    .left-part{
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 50px;
+        .content{
+            width: 70%;
+            margin: 0 0 0 auto;
+            .resto{
+                font-family: $font1;
+                font-size: 3.5rem;
+                color: $color3;
+            }
+            p{
+                color: $color2;
+                font-family: $font3;
+                font-weight: 50;
+                font-size: 1.1rem;
+                line-height: 40px;
+                margin: 20px 0 50px 0;
+            }
+        }        
+    }
+    .right-part{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+
+        .content{
+            .subtitle{
+                text-transform: uppercase;
+                color: $color2;
+                font-size: 1.4rem;
+                font-family: $font2;
+            }
+            .mail{
+                border: 1px solid $color4;
+                width: 40%;
+                padding: 10px;
+                color: $color7;
+                font-family: $font3;
+                font-size: 1.2rem;
+                margin: 10px 0 50px 0;
+            }
+            .right-part-follow{
+                display: flex;
+
+                ul{
+                    display: flex;
+                    
+                    li{
+                        margin: 0 30px 0 20px;
+                        color: $color7;
+                    }
+                }
+            }
+        }
+
+    }
+}

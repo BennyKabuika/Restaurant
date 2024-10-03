@@ -1,0 +1,257 @@
+/****************** SECTION3 PART **********************/
+.section3{
+    background: $color4;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: 250vh;
+
+    .top-container{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        width: 70%;
+        margin: 0 auto;
+        padding: 100px 0 150px 0;
+
+        .left-part{
+            background: $color1;
+            
+            .left-part-content{
+                border: 1px dashed $color2;
+                margin: 25px;
+                
+                .colored{
+                    margin-top: 20px;
+                    font-family: $font1;
+                    color: $color3;
+                    font-size: 3rem;
+                }
+                .no-colored{
+                    text-transform: uppercase;
+                    color: $color2;
+                    font-size: 2rem;
+                    font-family: $font2;
+                    margin-bottom: 25px;
+                }
+                h5{
+                    margin: 50px 0 10px 0;
+                    color: $color3;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    font-family: $font3;
+                }
+                p{
+                    color: $color2;
+                    font-family: $font3;
+                }
+            }
+        }
+        .right-part{
+            background: $color2;
+            padding: 100px 20px 30px 20px;
+
+            .right-part-content{
+                .title{
+                    font-family: $font1;
+                    color: $color3;
+                    font-size: 2.9rem;
+                }
+                .title2{
+                    text-transform: uppercase;
+                    font-family: $font2;
+                    font-weight: 600;
+                    font-size: 2rem;
+                }
+                img{
+                    margin: 50px 0 50px 0;
+                }
+                form{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 25px;
+                    width: 80%;
+                    margin: 0 auto;
+                    position: relative;
+
+                    select, input[type="date"],input[type="time"],input[type="text"],input[type="number"],input[type="email"]{
+                        border: none;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid $color7;
+                    }
+                    ::placeholder{
+                        font-size: 1rem;
+                        font-family: $font3;
+                    }
+                    .bouton{
+                        @include alignChildren(center);
+                        margin: 20px;
+                        position: absolute;
+                        top: 135px;
+                        bottom: 0;
+                        right: 0;
+                        left: 10px;
+
+                        input[type="submit"]{
+                            
+                            background: $color4;
+                            padding: 15px 30px 15px 30px;
+                            letter-spacing: 3px;
+                            color: $color2;
+                            border: none;
+                            font-family: $font2;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            transition: .2s linear;
+
+                            &:hover{
+                                background: $color7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .mid-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+        .mid-container-top{
+            .title{
+                font-family: $font1;
+                color: $color3;
+                font-size: 2.9rem;
+            }
+            .text{
+                text-transform: uppercase;
+                font-family: $font2;
+                font-weight: 800;
+                font-size: 3rem;
+                color: $color2;
+            }
+            img{
+                margin: 20px 0 20px 0;
+            }
+        }
+        .mid-container-bottom{
+            display: grid;
+            grid-template-columns: 65% 35%;
+            width: 80%;
+            margin: 0 auto;
+
+            .mid-container-bottom-left-part{
+                display: grid;
+                grid-template-columns: 35% 65%;
+                padding-right: 20px;
+
+                .left-part{
+                    margin-bottom: 25px;
+                    background: url(/assets/img/event-01.jpg) center/cover;
+                    width: 100%;
+
+                    .date{
+                        color: $color2;
+                        background: $color4;
+                        font-size: 2rem;
+                        font-family: $font3;
+                        font-weight: 700;
+                        transform: translateY(70px);
+                        margin: 0 90px 0 90px;
+                        padding: 20px 0 20px 0;
+                    }
+                }
+                .right-part{
+                    margin-bottom: 25px;
+                    background: url(/assets/img/event-02.jpg) center/cover;
+                    width: 100%;
+
+                    .date{
+                        color: $color2;
+                        background: $color4;
+                        font-size: 2rem;
+                        font-family: $font3;
+                        font-weight: 700;
+                        transform: translateY(70px);
+                        margin: 0 90px 0 90px;
+                        padding: 20px 0 20px 0;
+                    }
+                }
+                
+                .right-part-text{
+                    background: url(/assets/img/event-02.jpg);
+                    background: $color6;
+                    text-align: left;
+                    padding: 43px;
+                    margin-bottom: 25px;
+
+                    h5{
+                        font-size: 1.8rem;
+                        font-family: $font3;
+                        font-weight: 200;
+                    }
+                    p{
+                        color: $color7;
+                        margin: 25px 0 25px 0;
+                        font-size: 1.3rem;
+                        font-family: $font3;
+                    }
+                    .text{
+                        color: $color1;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .mid-container-bottom-right-part{
+                background: url(/assets/img/event-03.jpg) no-repeat;
+                width: 100%;
+
+                .content{
+                    background: $color6;
+                    height: 85%;
+                    margin: 30px;
+
+                    .date{
+                        background: $color4;
+                        width: 30%;
+                        margin: 0 auto;
+                        padding-bottom: 25px;
+                        color: $color2;
+                        font-size: 2rem;
+                        font-family: $font3;
+                        font-weight: 800;
+                    }
+                    .month{
+                        color: $color2;
+                        font-size: 2rem;
+                        font-family: $font3;
+                        font-weight: 800;
+                    }
+                    h5{
+                        margin: 50px 0 20px 0;
+                        font-family: $font3;
+                        font-size: 2rem;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: $color7;
+                        margin: 25px 0 25px 0;
+                        font-size: 1.1rem;
+                        font-family: $font3;
+                    }
+                    .text{
+                        color: $color1;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        font-family: $font3;
+                        transform: translateY(50px);
+                    }
+                }
+            }
+        }
+    }
+}

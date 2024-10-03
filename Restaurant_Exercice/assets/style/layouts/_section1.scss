@@ -1,0 +1,69 @@
+/********************* SECTION1 PART ***********************/
+.section1{
+    background: $color6;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media screen and (max-width: 767px){
+        display: block;
+        height: 100%;
+    }
+
+    .section-left{
+        @include alignChildren(center);
+        margin: 20px;
+        border: 1px dashed $color3;
+
+        .section-content-left{
+            padding-top: 30px;
+
+            h3{
+                font-family: $font1;
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: $color3;
+            }
+            .our-store{
+                transform: translateY(-15px);
+                font-family: $font2;
+                text-transform: uppercase;
+                color: $color1;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            img{
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 1.2rem;
+                font-family: $font3;
+                margin: 20px;
+            }
+            .photo{
+                margin-top: 20px;
+                width: 100px;
+                border-radius: 50%;
+            }
+            .name{
+                font-family: $font2;
+            }
+            .job{
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                font-family: $font2;
+                color: $color7;
+            }
+            
+        }
+    }
+    .section-right{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            @media screen and (max-width: 767px){
+                display: none;
+            }
+        }
+    }
+}
